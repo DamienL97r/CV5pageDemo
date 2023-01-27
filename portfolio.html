@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!--Transition .slide-in-->
+
+    <div class="slide-in bg-color" ></div>
+
+
+
+
+    <!--Panneau de control des couleurs-->
+    <div id="container-gear" class="container-gear bg-color" >
+        <img src="images/gear.png" alt="" onclick="toggleSlide()">
+        <div class="bg-color" id="panneau-controle-couleur">
+            <p>Couleur</p>
+            <div class="color-square" id="color-1"></div>
+            <div class="color-square" id="color-2"></div>
+            <div class="color-square" id="color-3"></div>
+            <div class="color-square" id="color-4"></div>
+            <div class="color-square" id="color-5"></div>
+            <div class="color-square" id="color-6"></div>
+        </div>
+    </div>
+
+
+
+    <!--Navbar avec LOGO + Icone menu-->
+    <div class="navbar" >
+
+        <!--Logo-->
+
+        
+
+        <!--Icone "maison" menu hamburger-->
+        <button id="menu-toggle-btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+
+    </div>
+
+    
+
+    <!--MENU-->  
+        
+    <nav id="menu">
+        <!-- Contenu du menu -->
+        <ul>
+            <li>
+                <a class="onglet" href="index.html" target="" >Accueil</a>
+                <p class="hover-text" id="home">ACCUEIL</p>
+            </li>
+            <li>
+                <a class="onglet" href="about.html" target="" >A propos</a>
+                <p class="hover-text" id="about" >A PROPOS</p>
+            </li>
+            <li>
+                <a class="onglet" href="blog.html" target="" >Blog</a>
+                <p class="hover-text" id="blog" >BLOG</p>
+            </li>
+            <li>
+                <a class="onglet" href="portfolio.html" target="" >Portfolio</a>
+                <p class="hover-text" id="portfolio" >PORTFOLIO</p>
+            </li>
+            <li>
+                <a class="onglet" href="contact.html" target="" >Contact</a>
+                <p class="hover-text" id="contact" >CONTACT</p>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="portfolio">
+
+        <div class="header-page">
+            <h1><span class="color">Portfolio</span></h1>
+            <p>Quelques <span class="color">projets...</span></p>
+        </div>
+
+
+
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/portfolio-first.jpg" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Application mobile</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
+                    expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+            </div>
+        </div>
+
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/portfolio-second.jpg" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Développement web</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
+                    expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                <button class="btnPortfolio bg-color-hov" >Voir le projet</button>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/portfolio-third.jpg" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Design UX/UI</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
+                    expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                <button class="btnPortfolio bg-color-hov" >Voir le projet</button>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/portfolio-fourth.jpg" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Création graphiques</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
+                    expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                <button class="btnPortfolio bg-color-hov" >Voir le projet</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="js/essai.js"></script>
+    
+</body>
+</html>

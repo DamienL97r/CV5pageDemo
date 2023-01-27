@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!--Transition .slide-in-->
+
+    <div class="slide-in bg-color" ></div>
+
+
+
+    <!--Panneau de control des couleurs-->
+    <div id="container-gear" class="container-gear bg-color" >
+        <img src="images/gear.png" alt="" onclick="toggleSlide()">
+        <div class="bg-color" id="panneau-controle-couleur">
+            <p>Couleur</p>
+            <div class="color-square" id="color-1"></div>
+            <div class="color-square" id="color-2"></div>
+            <div class="color-square" id="color-3"></div>
+            <div class="color-square" id="color-4"></div>
+            <div class="color-square" id="color-5"></div>
+            <div class="color-square" id="color-6"></div>
+        </div>
+    </div>
+
+
+
+    <!--Navbar avec LOGO + Icone menu-->
+    <div class="navbar" >
+
+        <!--Logo-->
+
+        
+
+        <!--Icone "maison" menu hamburger-->
+        <button id="menu-toggle-btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+
+    </div>
+
+    
+
+    <!--MENU-->  
+        
+    <nav id="menu">
+        <!-- Contenu du menu -->
+        <ul>
+            <li>
+                <a class="onglet" href="index.html" target="" >Accueil</a>
+                <p class="hover-text" id="home">ACCUEIL</p>
+            </li>
+            <li>
+                <a class="onglet" href="about.html" target="" >A propos</a>
+                <p class="hover-text" id="about" >A PROPOS</p>
+            </li>
+            <li>
+                <a class="onglet" href="blog.html" target="" >Blog</a>
+                <p class="hover-text" id="blog" >BLOG</p>
+            </li>
+            <li>
+                <a class="onglet" href="portfolio.html" target="" >Portfolio</a>
+                <p class="hover-text" id="portfolio" >PORTFOLIO</p>
+            </li>
+            <li>
+                <a class="onglet" href="contact.html" target="" >Contact</a>
+                <p class="hover-text" id="contact" >CONTACT</p>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Blog-->
+
+    <div class="blog">
+
+        <div class="header-page">
+            <h1><span class="color">Blog</span></h1>
+            <p><span class="color"> Mes articles</span> les plus récents</p>
+        </div> 
+
+        <div class="container-article">
+
+
+            <div class="blogs">
+                
+                <div class="img">
+                    <img src="images/post-one.jpg" alt="blog-one">
+                   <div class="blog-date bg-color">8 May,20</div>
+                </div>
+                <div class="blog-text">
+                    <h3>Harleys à Hawaai</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo 
+                        veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
+                         libero.</p>
+                </div>
+            </div>   
+            
+            
+            <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-two.jpg" alt="blog-two">
+                   <div class="blog-date bg-color">16 Jan,20</div>
+               </div>
+               <div class="blog-text">
+                   <h3>Mes 5 conseils pour être productif</h3>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, 
+                       recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur
+                        eius eligendi dolor magnam sit!</p>
+               </div>
+           </div>
+
+
+           <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-three.jpg" alt="blog-three">
+                   <div class="blog-date bg-color">30 Nov,19</div>
+               </div>
+               <div class="blog-text">
+                   <h3>Les "Accro" du café</h3>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit 
+                       ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas.
+                        Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
+               </div>
+           </div>
+
+
+           <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-four.jpg" alt="blog-four">
+                   <div class="blog-date bg-color">6 Jul,19</div>
+               </div>
+               <div class="blog-text">
+                   <h3>Développement web</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
+                        quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis praesentium quae.
+                         Sed, quibusdam necessitatibus.</p>
+               </div>
+           </div> 
+           
+           
+           <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-five.jpg" alt="blog-five">
+                   <div class="blog-date bg-color">1 Jun,19</div>
+               </div>
+               <div class="blog-text">
+                   <h3>Le télé-travail</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem 
+                       dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum, soluta hic minus 
+                       sint explicabo..</p>
+               </div>
+           </div> 
+           
+           
+           <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-six.jpg" alt="blog-six">
+                   <div class="blog-date bg-color">28 Feb,19</div>
+               </div>
+               <div class="blog-text">
+                   <h3>Voyage d'affaire</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde, 
+                       ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
+               </div>
+           </div>
+            
+
+        </div>
+
+    </div>
+    
+    
+    <script src="js/essai.js"></script>
+    
+</body>
+</html>
