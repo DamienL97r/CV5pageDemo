@@ -14,17 +14,25 @@ body {
     
 }
 
-/*Transition .slide-in*/
+/*Fade in au chargement de la page */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+
+
+/*Transition entre les pages .slide-in*/
 
 .slide-in {
-  position: absolute;
-  z-index: 5;
-  left: -100%;
-  width: 100%;
+  z-index:5;
   height: 100%;
-  background-color: white;
-  transition: left 3s;
-}
+  width: 100%;
+  position: absolute;
+  left: -100%;
+  transition: left 1.5s ;
+  }
 
 
 /*Panneau de control des couleurs */
@@ -44,9 +52,6 @@ body {
 }
 
 
-
-
-
 .container-gear > img {
   z-index: 2;
   animation: rotation 10s infinite linear;
@@ -62,7 +67,7 @@ body {
 
 }
 
-/*Animation de l'image*/
+/*Animation de l'image gear.png*/
 
 @keyframes rotation {
   from { transform: rotate(0deg); }
@@ -137,7 +142,7 @@ body {
 
 
 
-
+/*Header des pages, contient: titres + paragraphes*/
 
 .header-page {
   text-align: center;

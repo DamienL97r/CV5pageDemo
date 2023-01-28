@@ -1,29 +1,26 @@
-/*Transition .slide-in*/
+
+
+
+/*Transition entre les pages .slide-in*/
 
 
 // Sélectionnez tous les éléments "a" dans le menu
-var menuLinks = document.querySelectorAll("#menu a");
+var menuLinks = document.querySelectorAll(".onglet");
 
 // Ajoutez un événement "click" à tous les éléments "a" dans le menu
 for (var i = 0; i < menuLinks.length; i++) {
-    menuLinks[i].addEventListener("click", function(event) {
-        event.preventDefault(); // Empêche la redirection par défaut
-        var link = this;
-        // Sélectionnez l'élément "slide-in"
-        var slideIn = document.querySelector(".slide-in");
-        // Modifiez les propriétés de style de l'élément "slide-in" pour le déplacer vers la gauche
-        slideIn.style.left = "0%";
-        slideIn.style.transition = "left 1.8s";
-        setTimeout(function() {
-            window.location = link.href; // Redirigez vers la page liée à l'élément "a" cliqué
-        }, 2000);
-    });
+menuLinks[i].addEventListener("click", function(event) {
+event.preventDefault(); // Empêche la redirection par défaut
+var link = this;
+// Sélectionnez l'élément "slide-in"
+var slideIn = document.querySelector(".slide-in");
+// Modifiez les propriétés de style de l'élément "slide-in" pour le déplacer vers la gauche
+slideIn.style.left = "0%";
+setTimeout(function() {
+window.location = link.href; // Redirigez vers la page liée à l'élément "a" cliqué
+}, 1500);
+});
 }
-
-
-
-
-
 
 
 
